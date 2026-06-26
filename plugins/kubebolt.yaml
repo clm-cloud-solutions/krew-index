@@ -1,7 +1,7 @@
 # This is the TEMPLATE for the krew plugin manifest.
 #
 # Placeholders are replaced by the release workflow:
-#   1.15.0          - Tag without v prefix (e.g., 1.2.3)
+#   1.16.0          - Tag without v prefix (e.g., 1.2.3)
 #   __SHA_*_TGZ__        - SHA256 of each tar.gz archive
 #
 # Users install with:
@@ -16,7 +16,7 @@ kind: Plugin
 metadata:
   name: kubebolt
 spec:
-  version: v1.15.0
+  version: v1.16.0
   homepage: https://github.com/clm-cloud-solutions/kubebolt
   shortDescription: "Instant Kubernetes monitoring — full cluster visibility in under 2 minutes"
   description: |
@@ -38,34 +38,34 @@ spec:
         matchLabels:
           os: darwin
           arch: arm64
-      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.15.0/kubebolt-darwin-arm64.tar.gz
-      sha256: 73a66e78958f1ffdd8fb9428e895f4dc1f2338c885fa1fedaa83a7161b975b8d
+      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.16.0/kubebolt-darwin-arm64.tar.gz
+      sha256: 95fe780c413abb98c08923b2f745aa8d67d1b177fd360d4b6d099dee8bb34e48
       bin: kubectl-kubebolt
     - selector:
         matchLabels:
           os: darwin
           arch: amd64
-      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.15.0/kubebolt-darwin-amd64.tar.gz
-      sha256: ef429d64cfff836931cb1cfe7c9d3a10ca17e115ed4f357b38b7f59c33f9bfd3
+      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.16.0/kubebolt-darwin-amd64.tar.gz
+      sha256: e74dc2996a2fd2008ac9677c235ced3fc8fb9070cef5914866e1b86745eee9cc
       bin: kubectl-kubebolt
     - selector:
         matchLabels:
           os: linux
           arch: arm64
-      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.15.0/kubebolt-linux-arm64.tar.gz
-      sha256: 164b1363fa49592d5068c8930ddc009d741a97b9b4ac5d16582b6889fc4adc62
+      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.16.0/kubebolt-linux-arm64.tar.gz
+      sha256: 2cdd3ce2dd5add8116480b0921235bbee4fa02a5f621734f1964b08697373cb5
       bin: kubectl-kubebolt
     - selector:
         matchLabels:
           os: linux
           arch: amd64
-      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.15.0/kubebolt-linux-amd64.tar.gz
-      sha256: f6d0975ae3b733033e19a8113cc8b3bbc1e0eaee851f297cadf7653fc42fafac
+      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.16.0/kubebolt-linux-amd64.tar.gz
+      sha256: 82b83733d922a6031fb5d014eaaf48f05782675587170b1961e85092c4df2992
       bin: kubectl-kubebolt
     - selector:
         matchLabels:
           os: windows
           arch: amd64
-      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.15.0/kubebolt-windows-amd64.zip
-      sha256: c01cbb19041e0998bbf15a695cc3b9fdba2cf142ced46c1bf6f6e30e47d10327
+      uri: https://github.com/clm-cloud-solutions/kubebolt/releases/download/v1.16.0/kubebolt-windows-amd64.zip
+      sha256: 078bf06195ba3d8769c440f9b71df996ac2b6c1650ac277e61f04cc0b33afbaf
       bin: kubectl-kubebolt.exe
